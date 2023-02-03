@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Nodejs</h1>
+        </div>
+        <div class="form-body">
+            <form action="/" method="post">
+                <div style="display: grid; place-items: center;">
+                    <div class="form-name">
+                        <section class="form-name-left">
+                            <input type="text" name="fname" placeholder="First name" required>
+                        </section>
+                        <section class="form-name-right">
+                            <input type="text" name="lname" placeholder="Last name" required>
+                        </section>
+                    </div>
+                </div>
+                <section>
+                    <input type="email" name="email" placeholder="Email" required>
+                </section>
+                <section>
+                    <input type="password" name="password" placeholder="Password" required>
+                </section>
+                <section>
+                    <input type="password" name="confirm_password" placeholder="Confirm password" required>
+                </section>
+                <section class="form-submit-button">
+                    <button type="submit">Sign up</button>
+                </section>
+            </form>
+            <div class="line-hr">
+                <div class="line"></div>
+                <p>or</p>
+                <div class="line"></div>
+            </div>
+            <div class="google-form-container">
+                <div class="google-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" width="30" alt="google">
+                </div>
+                <div class="google-auth-text">
+                    <p>
+                        <a href="/">
+                            Sign up with google
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="account-text">
+                <p>
+                    already have an account
+                    <a href="/signin.html">
+                        sign in
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

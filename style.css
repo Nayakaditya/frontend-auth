@@ -1,0 +1,150 @@
+:root{
+    --main-color : #ff5100;
+    --secondary-color : #812900;
+}
+
+body{
+    margin: 0;
+    background-color: var(--main-color);
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form-container{
+    margin-top: 100px;
+    width: 450px;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    box-shadow: 0px 0px 20px 1px var(--secondary-color);
+}
+
+.form-container .form-body .form-name{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-container .form-body .form-name > section{
+    width: 48%;
+}
+
+.form-container .form-body .form-name .form-name-left{
+    margin-left: 10px;
+}
+
+.form-container .form-header h1{
+    color: #1b1b1b;
+    text-align: center;
+    margin-top: 0;
+    padding:20px 0;
+}
+
+.form-container .form-body section{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form-container .form-body section input{
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px dashed var(--main-color);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.form-container .form-body section input:focus{
+    border-color: var(--main-color);
+    
+}
+
+.form-container .form-body section input::placeholder{
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.form-container .form-body .form-submit-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-container .form-body .form-submit-button button{
+    margin-top: 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .3s ;
+}
+.form-container .form-body .form-submit-button button:hover{
+    border: 1px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+
+/* Line */
+.line-hr{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.line-hr p{
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.line-hr .line{
+    margin-bottom: 23px;
+    width: 218px;
+    border-bottom: 1px solid;
+}
+
+/* Google Authentication */
+.google-form-container{
+    border: 1px solid;
+    background-color: #0099ff;
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.google-form-container .google-img{
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.google-form-container .google-auth-text{
+    margin: 0 auto;
+}
+
+.google-form-container .google-auth-text a{
+    text-decoration: none;
+    color: white;
+}
+
+/* bottom */
+.account-text{
+    display: grid;
+    place-items: center;
+}
